@@ -19,20 +19,19 @@ The process exists to make work reproducible across conversations and tools:
 
 ## Repositories
 
-Default local paths used by the current workflow:
+Current workspace layout:
 
 ```text
-Nicole spec repository:
-/data/data/com.termux/files/home/Sources/nicole_language_docs_seed
+WORKSPACE_ROOT=/data/data/com.termux/files/home/Sources/nicole
 
-NicolePy implementation repository:
-/data/data/com.termux/files/home/Sources/nicole_python_implementation
+SPEC_REPO=${WORKSPACE_ROOT}/nicole_language_docs_seed
 
-Process repository:
-/data/data/com.termux/files/home/Sources/nicole-dev-process
+IMPLEMENTATION_REPO=${WORKSPACE_ROOT}/nicole_python_implementation
+
+PROCESS_REPO=${WORKSPACE_ROOT}/nicole-dev-process
 ```
 
-Adjust paths in prompts when repositories move.
+Prefer these variables in prompts and examples rather than repeating repository paths inline.
 
 ## Read order for a new ChatGPT conversation
 

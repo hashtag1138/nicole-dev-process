@@ -14,10 +14,24 @@ Do not add cleanup work.
 
 ---
 
+# Workspace
+
+```text
+WORKSPACE_ROOT=<WORKSPACE_ROOT>
+
+SPEC_REPO=${WORKSPACE_ROOT}/nicole_language_docs_seed
+
+IMPLEMENTATION_REPO=${WORKSPACE_ROOT}/nicole_python_implementation
+
+PROCESS_REPO=${WORKSPACE_ROOT}/nicole-dev-process
+```
+
+---
+
 # Repository
 
 ```text
-<PATH_TO_NICOLE_SPEC_REPO>
+${SPEC_REPO}
 ```
 
 Expected HEAD:
@@ -39,7 +53,7 @@ Expected modified files:
 Run:
 
 ```bash
-cd <PATH_TO_NICOLE_SPEC_REPO>
+cd ${SPEC_REPO}
 
 git status --short
 git rev-parse HEAD

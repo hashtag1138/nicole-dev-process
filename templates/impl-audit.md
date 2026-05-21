@@ -23,12 +23,26 @@ Nicole specification always wins.
 
 ---
 
+# Workspace
+
+```text
+WORKSPACE_ROOT=<WORKSPACE_ROOT>
+
+SPEC_REPO=${WORKSPACE_ROOT}/nicole_language_docs_seed
+
+IMPLEMENTATION_REPO=${WORKSPACE_ROOT}/nicole_python_implementation
+
+PROCESS_REPO=${WORKSPACE_ROOT}/nicole-dev-process
+```
+
+---
+
 # Repositories
 
 Nicole specification repository:
 
 ```text
-<PATH_TO_NICOLE_SPEC_REPO>
+${SPEC_REPO}
 ```
 
 Expected spec tag/commit:
@@ -40,7 +54,7 @@ Expected spec tag/commit:
 NicolePy repository:
 
 ```text
-<PATH_TO_NICOLEPY_REPO>
+${IMPLEMENTATION_REPO}
 ```
 
 Expected NicolePy baseline:
@@ -56,7 +70,7 @@ Expected NicolePy baseline:
 Run in spec repo:
 
 ```bash
-cd <PATH_TO_NICOLE_SPEC_REPO>
+cd ${SPEC_REPO}
 
 git status --short
 git rev-parse HEAD
@@ -66,7 +80,7 @@ git tag --points-at HEAD
 Run in NicolePy repo:
 
 ```bash
-cd <PATH_TO_NICOLEPY_REPO>
+cd ${IMPLEMENTATION_REPO}
 
 git status --short
 git rev-parse HEAD

@@ -6,14 +6,13 @@ User message:
 On reprend le travail sur Nicole.
 Commence par lire le repo nicole-dev-process, puis attends mes instructions.
 
-Process repo:
-/data/data/com.termux/files/home/Sources/nicole-dev-process
+WORKSPACE_ROOT=/data/data/com.termux/files/home/Sources/nicole
 
-Spec repo:
-/data/data/com.termux/files/home/Sources/nicole_language_docs_seed
+PROCESS_REPO=${WORKSPACE_ROOT}/nicole-dev-process
 
-Implementation repo:
-/data/data/com.termux/files/home/Sources/nicole_python_implementation
+SPEC_REPO=${WORKSPACE_ROOT}/nicole_language_docs_seed
+
+IMPLEMENTATION_REPO=${WORKSPACE_ROOT}/nicole_python_implementation
 ```
 
 Expected ChatGPT behavior:

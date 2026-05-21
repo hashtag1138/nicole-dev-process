@@ -14,8 +14,22 @@ Do not modify files until repository state is classified.
 Repository:
 
 ```text
-<PATH_TO_REPO>
+<TARGET_REPO>
 ```
+
+Workspace context:
+
+```text
+WORKSPACE_ROOT=<WORKSPACE_ROOT>
+
+SPEC_REPO=${WORKSPACE_ROOT}/nicole_language_docs_seed
+
+IMPLEMENTATION_REPO=${WORKSPACE_ROOT}/nicole_python_implementation
+
+PROCESS_REPO=${WORKSPACE_ROOT}/nicole-dev-process
+```
+
+Use one of these repository variables when setting `<TARGET_REPO>`.
 
 Expected baseline:
 
@@ -26,7 +40,7 @@ Expected baseline:
 Run:
 
 ```bash
-cd <PATH_TO_REPO>
+cd <TARGET_REPO>
 
 git status --short
 git rev-parse HEAD
