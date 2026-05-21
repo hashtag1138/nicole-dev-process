@@ -136,6 +136,48 @@ Unexpected source/test changes:
   stop and restore or inspect manually.
 ```
 
+Tool failure recovery additions:
+
+- do not infer successful completion;
+- classify partial-change state;
+- run recovery checks;
+- prefer repository-relative paths;
+- record unavailable tools.
+
+## WORKSPACE_CLEANUP
+
+Purpose:
+
+```text
+Remove temporary artifacts created during development tooling.
+```
+
+Checks:
+
+- `git status --short`
+- `git diff --name-only`
+- external artifact existence
+- repository integrity after cleanup
+
+Requirements:
+
+- cleanup must not modify tracked files;
+- cleanup artifacts must remain outside repository contents.
+
+## RELEASE_FIXUP
+
+Purpose:
+
+```text
+Correct release metadata state.
+```
+
+Examples:
+
+- release notes added after tag creation;
+- tag attached to wrong commit;
+- release metadata incomplete.
+
 ## Commit/tag policy
 
 Commits should be small and phase-specific.

@@ -94,3 +94,28 @@ Pair
 Reason:
 
 Expose fundamental collection operations without adding a new product type.
+
+## 2026-05 — Release lifecycle distinction
+
+Decision:
+
+```text
+Three release layers exist:
+
+1. Git release
+   commit + tag
+
+2. Published release
+   branch/tag pushed
+
+3. GitHub release
+   release entry attached to tag
+```
+
+Reason:
+
+Git tags and GitHub releases are distinct concepts and should not be conflated.
+
+Impact:
+
+Release prompts should state which release layer is being executed.

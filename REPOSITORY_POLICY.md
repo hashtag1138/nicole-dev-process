@@ -73,6 +73,18 @@ It must not become:
 
 It should remain short, operational, and template-driven.
 
+## Generated artifact policy
+
+Generated artifacts are not source of truth.
+
+Examples:
+
+- virtual environments;
+- package metadata;
+- generated build outputs.
+
+Generated artifacts should not drive language or implementation decisions.
+
 ## Source-of-truth hierarchy
 
 When conflicts exist:

@@ -164,6 +164,20 @@ Classify repository state after interrupted Codex execution.
 
 No modifications unless explicitly requested.
 
+### Workspace contamination check
+
+Purpose:
+
+```text
+Detect external artifacts that may affect process validation.
+```
+
+Include:
+
+```bash
+ls -ld <external-path> || true
+```
+
 ## Model recommendation block
 
 Every prompt should include:
@@ -188,4 +202,13 @@ Ready for ... audit.
 Ready for ... commit.
 Additional work required before ...
 Implementation complete for ...
+```
+
+Residual gap reporting block:
+
+```text
+Known residual gaps:
+Blocking:
+Non-blocking:
+Deferred:
 ```
