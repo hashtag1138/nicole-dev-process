@@ -11,6 +11,12 @@ RECOVERY CHECK FIRST.
 
 Do not modify files until repository state is classified.
 
+Process baseline:
+
+- `README.md` read
+- `WORKFLOW.md` read
+- `PROMPT_PROTOCOL.md` read
+
 Repository:
 
 ```text

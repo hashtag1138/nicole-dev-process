@@ -17,6 +17,23 @@ The process exists to make work reproducible across conversations and tools:
 - every meaningful change is audited before and after implementation;
 - commits/tags are created only after validation.
 
+## Read first
+
+1. `README.md`
+2. `WORKFLOW.md`
+3. `PROMPT_PROTOCOL.md`
+
+For a complete startup example see:
+
+`examples/start-new-conversation.md`
+
+## Optional documents
+
+- `ROLES.md`
+- `REPOSITORY_POLICY.md`
+- `DECISION_LOG.md`
+- `templates/*`
+
 ## Repositories
 
 Current workspace layout:
@@ -32,24 +49,6 @@ PROCESS_REPO=${WORKSPACE_ROOT}/nicole-dev-process
 ```
 
 Prefer these variables in prompts and examples rather than repeating repository paths inline.
-
-## Read order for a new ChatGPT conversation
-
-When resuming work, tell ChatGPT:
-
-```text
-On reprend le travail sur Nicole.
-Commence par lire le repo nicole-dev-process, puis attends mes instructions.
-```
-
-Recommended reading order:
-
-1. `WORKFLOW.md`
-2. `ROLES.md`
-3. `REPOSITORY_POLICY.md`
-4. `PROMPT_PROTOCOL.md`
-5. `DECISION_LOG.md`
-6. `templates/*` as needed
 
 ## Core rule
 

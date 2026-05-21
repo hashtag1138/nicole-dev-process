@@ -12,6 +12,12 @@ Finalize implementation changes only.
 Do not modify files.
 Do not add cleanup work.
 
+Process baseline:
+
+- `README.md` read
+- `WORKFLOW.md` read
+- `PROMPT_PROTOCOL.md` read
+
 ---
 
 # Workspace

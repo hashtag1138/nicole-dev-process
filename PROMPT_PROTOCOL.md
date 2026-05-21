@@ -22,6 +22,26 @@ Every Codex prompt should include:
 13. Final recommendation wording
 ```
 
+## Major phase bootstrap
+
+Major phase includes:
+
+- new conversation
+- resumed interrupted work
+- beginning of a new feature
+- beginning of a specification phase
+- beginning of an implementation phase
+
+Minor follow-up discussion does not require bootstrap repetition.
+
+Major phase prompts must assume or verify:
+
+Process baseline:
+
+- `README.md` read
+- `WORKFLOW.md` read
+- `PROMPT_PROTOCOL.md` read
+
 ## Stop conditions
 
 Codex must stop when:
@@ -193,6 +213,10 @@ Model recommendation:
 
 Output formats should be exact and structured.
 Avoid freeform reports when a decision is needed.
+
+Templates are reusable prompt structures only.
+
+Templates are not source of truth.
 
 Common final recommendations:
 

@@ -4,6 +4,27 @@ This document defines the standard workflow for Nicole and NicolePy work.
 
 The workflow is intentionally conservative. It favors explicit baselines, audits, small phases, and reproducible prompts.
 
+## 0. Process bootstrap
+
+Before starting a major phase:
+
+- verify process repository location
+- read:
+  - `README.md`
+  - `WORKFLOW.md`
+  - `PROMPT_PROTOCOL.md`
+- identify source-of-truth repository
+- identify target repository
+- identify expected baseline commit/tag
+
+This step applies only to:
+
+- new conversations
+- resumed interrupted work
+- beginning of a new feature
+- beginning of a specification phase
+- beginning of an implementation phase
+
 ## Actors
 
 - User: proposes features, makes tradeoffs, approves decisions.
@@ -29,6 +50,8 @@ Every task must respect these invariants:
 ## Feature lifecycle
 
 ```text
+Process bootstrap
+  ↓
 Idea
   ↓
 Discussion and tradeoff analysis

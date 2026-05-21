@@ -13,6 +13,12 @@ Do not modify implementation repositories.
 Do not modify NicolePy.
 Do not add implementation code.
 
+Process baseline:
+
+- `README.md` read
+- `WORKFLOW.md` read
+- `PROMPT_PROTOCOL.md` read
+
 Goal:
 
 Patch Nicole specification for `<FEATURE>` using only the approved decisions below.

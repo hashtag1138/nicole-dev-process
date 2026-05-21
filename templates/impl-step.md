@@ -14,6 +14,12 @@ Do not commit.
 Do not tag.
 Do not push.
 
+Process baseline:
+
+- `README.md` read
+- `WORKFLOW.md` read
+- `PROMPT_PROTOCOL.md` read
+
 Nicole specification always wins.
 
 ---
